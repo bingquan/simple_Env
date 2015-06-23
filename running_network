@@ -1,0 +1,12 @@
+#!/bin/bash
+
+NN_MODEL="convnet" # 'type of model to construct: linear | mlp | convnet')
+
+WORLD_SIZE="5" #depth of T maze
+STEPS="20" #iterations to take
+
+args="-model $NN_MODEL -world_size $WORLD_SIZE -steps $STEPS"
+echo $args
+
+qlua test_model.lua $args
+
