@@ -25,6 +25,10 @@ function environment:__init(_opt)
 		self.observation[5] = 2 --down
 	end
 
+	print(self.world)
+	-- print(self.observation)
+	print('world_state: '.. self.world_state)
+	
 
 	self.terminal = false	
 	self.reward = 0
@@ -71,7 +75,9 @@ function environment:newGame()
 	else
 		self.observation[5] = 2 --down
 	end
-
+	print(self.world)
+	-- print(self.observation)
+	print('world_state: '.. self.world_state)
 
 	self.terminal = false	
 	self.reward = 0
